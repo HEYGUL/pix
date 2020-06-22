@@ -1,13 +1,13 @@
 {{#bs-modal-simple
-  title="Merci de confirmer"
-  closeTitle="Annuler"
-  submitTitle="Confirmer"
+  title=this.title
+  closeTitle=this.closeTitle
+  submitTitle=this.submitTitle
   size=null
   fade=false
-  open=show
+  open=@show
   position="center"
-  onSubmit=(action confirm)
-  onHide=(action cancel)}}
-  <p>{{message}}</p>
+  onSubmit=@confirm
+  onHide=@cancel}}
+  <p>{{@message}}</p>
   <p class="confirm-popup__errors">{{error}}</p>
 {{/bs-modal-simple}}
