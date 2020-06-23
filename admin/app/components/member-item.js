@@ -1,6 +1,7 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import { inject as service } from '@ember/service';
 
 const options = [
   { value: 'ADMIN', label: 'Administrateur' },
@@ -9,9 +10,12 @@ const options = [
 
 export default class MemberItem extends Component {
 
+  @service notifications;
+
   @tracked organizationRoles = null;
   @tracked isEditionMode = false;
   @tracked selectedNewRole = null;
+  @tracked displayConfirm = false;
 
   constructor() {
     super(...arguments);
@@ -43,5 +47,17 @@ export default class MemberItem extends Component {
   editRoleOfMember() {
     this.isEditionMode = true;
     this.selectedNewRole = null;
+  }
+
+  @action
+  toggleDisplayConfirm() {
+    this.displayConfirm = !this.displayConfirm;
+  }
+
+  @action
+  async disableMembership() {
+    this.args.membership.disabledAt = new Date();
+    await this.args.updateMembership(this.args.membership);
+    this.toggleDisplayConfirm();
   }
 }

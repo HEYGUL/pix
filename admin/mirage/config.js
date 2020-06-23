@@ -52,9 +52,10 @@ export default function() {
     const membershipId = request.params.id;
     const params = JSON.parse(request.requestBody);
     const organizationRole = params.data.attributes['organization-role'];
+    const disabledAt = params.data.attributes['disabled-at'];
 
     const membership = schema.memberships.findBy({ id: membershipId });
-    return membership.update({ organizationRole });
+    return membership.update({ organizationRole, disabledAt });
   });
 
   this.patch('/organizations/:id', (schema, request) => {
