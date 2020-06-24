@@ -170,4 +170,31 @@ describe('Unit | Serializer | JSONAPI | membership-serializer', () => {
       expect(json.included[0].type).to.not.equal('users');
     });
   });
+
+  describe('#deserialize()', () => {
+
+    let jsonUser;
+
+    beforeEach(() => {
+      jsonUser = {
+        data: {
+          type: 'memberships',
+          id: '12345',
+          attributes: {
+            'organization-role': 'ADMIN',
+          },
+        }
+      };
+    });
+
+    it('should convert JSON API data into a map object that contain attribute to patch', () => {
+      // when
+      const membershipAttributes = serializer.deserialize(jsonUser);
+
+      // then
+      expect(membershipAttributes.organizationRole).to.equal('ADMIN');
+      expect(membershipAttributes.id).to.equal('12345');
+
+    });
+  });
 });
