@@ -4,6 +4,7 @@ import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | certification-info-competences', function(hooks) {
+
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
@@ -45,7 +46,7 @@ module('Integration | Component | certification-info-competences', function(hook
     this.set('competences', [{ index:'1.1', score:'30', level:'3' }, { index:'2.1', score:'30', level:'3' }, { index:'5.2', score:'30', level:'3' }]);
 
     // When
-    await render(hbs`{{certification-info-competences competences=competences edition=true}}`);
+    await render(hbs`<CertificationInfoCompetences @competences={{competences}} @edition={{true}} />`);
 
     // Then
     assert.dom('.certification-info-field').exists({ count:16 });
