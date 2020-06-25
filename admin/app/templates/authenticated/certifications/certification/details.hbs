@@ -1,3 +1,4 @@
+{{!-- template-lint-disable no-action --}}
 <div class="certification-details">
   <div class="row">
     <div class="col">
@@ -42,7 +43,7 @@
             @competence={{competence}}
             @rate={{this.rate}}
             @juryRate={{this.juryRate}}
-            @onUpdateRate={{this.onUpdateRate}} />
+            @onUpdateRate={{action this.onUpdateRate}} />
       {{/each}}
     </div>
   </div>
