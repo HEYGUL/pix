@@ -1,5 +1,12 @@
 # Pix Changelog
 
+## v2.167.0 (25/06/2020)
+
+- [#1556](https://github.com/1024pix/pix/pull/1556) [FEATURE] Permettre à un prescripteur d'obtenir un e-mail d'invitation en fonction de sa région (PIX-810).
+- [#1551](https://github.com/1024pix/pix/pull/1551) [FEATURE] Ajout de la pagination sur le tableau des élèves (PIX-723)
+- [#1548](https://github.com/1024pix/pix/pull/1548) [BUGFIX] Bloquer les double-clics sur l'envoi de signalements (PIX-704).
+- [#1552](https://github.com/1024pix/pix/pull/1552) [CLEANUP] Corriger les erreurs signalées dans Pix Admin, par le linter dans app/templates/authenticated (PIX-878).
+
 ## v2.166.0 (23/06/2020)
 
 - [#1509](https://github.com/1024pix/pix/pull/1509) [FEATURE] PART-1 : Nouveau visuel certificat (PIX-597)
