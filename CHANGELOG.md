@@ -1,5 +1,14 @@
 # Pix Changelog
 
+## v2.169.0 (01/07/2020)
+
+- [#1584](https://github.com/1024pix/pix/pull/1584) [FEATURE] Paramétrer l'attribut lang de Pix App (PIX-833).
+- [#1577](https://github.com/1024pix/pix/pull/1577) [FEATURE] PART 3 - Nouveau design certificat (PIX-839)
+- [#1561](https://github.com/1024pix/pix/pull/1561) [FEATURE] PART 2 - Nouveau design certificat (PIX-838)
+- [#1560](https://github.com/1024pix/pix/pull/1560) [BUGFIX] Corrige la numérotation des épreuves de certif dans Pix Admin (PIX-869)
+- [#1572](https://github.com/1024pix/pix/pull/1572) [BUGFIX] Correction de l'affichage du macaron Cléa sur la certif (PIX-879)
+- [#1583](https://github.com/1024pix/pix/pull/1583) [BUGFIX] Le signalement surveillant était supprimé en enregistrant une certif (PIX-916)
+
 ## v2.168.0 (25/06/2020)
 
 - [#1559](https://github.com/1024pix/pix/pull/1559) [FEATURE] Afficher le bouton retenter sur la carte de la competence (PIX-757).
