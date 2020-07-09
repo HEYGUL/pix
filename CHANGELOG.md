@@ -1,5 +1,12 @@
 # Pix Changelog
 
+## v2.173.0 (09/07/2020)
+
+- [#1585](https://github.com/1024pix/pix/pull/1585) [FEATURE] Ne pas autoriser un utilisateur à retenter une compétence quand le niveau maximum de la compétence est atteint (PIX-898).
+- [#1617](https://github.com/1024pix/pix/pull/1617) [FEATURE] Utilisation d'un nouveau template e-mail pour rejoindre une Organisation SCO (PIX-883).
+- [#1590](https://github.com/1024pix/pix/pull/1590) [TECH] Décorréler l'utilisation de isManagingStudents du type d'organisation SCO (PIX-924).
+- [#1591](https://github.com/1024pix/pix/pull/1591) [DESIGN SYSTEM] Ajouter PixBlock et PixBackgroundHeader dans Mon-Pix (PIX-921)
+
 ## v2.172.0 (09/07/2020)
 
 - [#1585](https://github.com/1024pix/pix/pull/1585) [FEATURE] Ne pas autoriser un utilisateur à retenter une compétence quand le niveau maximum de la compétence est atteint (PIX-898).
