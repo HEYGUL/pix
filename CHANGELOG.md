@@ -1,5 +1,8 @@
 # Pix Changelog
 
+## v2.173.2 (30/09/2020)
+
+
 ## v2.173.1 (09/07/2020)
 
 - [#1585](https://github.com/1024pix/pix/pull/1585) [FEATURE] Ne pas autoriser un utilisateur à retenter une compétence quand le niveau maximum de la compétence est atteint (PIX-898).
